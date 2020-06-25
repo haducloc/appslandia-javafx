@@ -1,0 +1,14 @@
+# Generated
+
+generated/
+bin/
+classes/
+build/
+target/
+
+*.class
+
+# Package Files #
+*.war
+*.ear
+
