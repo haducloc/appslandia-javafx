@@ -29,7 +29,7 @@ import java.util.ResourceBundle;
 import java.util.Set;
 
 import com.appslandia.common.utils.AssertUtils;
-import com.appslandia.common.utils.StringFormatUtils;
+import com.appslandia.common.utils.StringFormat;
 
 /**
  *
@@ -68,7 +68,7 @@ public class Resources {
 	}
 
 	public static String getString(String key, Object... params) {
-		return StringFormatUtils.format(getBundle().getString(key), params);
+		return StringFormat.format(getBundle().getString(key), params);
 	}
 
 	static class ResourceBundleImpl extends ResourceBundle {
