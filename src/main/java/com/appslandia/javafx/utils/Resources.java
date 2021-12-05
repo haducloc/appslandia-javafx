@@ -38,7 +38,7 @@ import com.appslandia.common.utils.StringFormat;
  */
 public class Resources {
 
-	private static final ResourceBundle LBundle = ResourceBundle.getBundle("com/appslandia/javafx/utils/Resources");
+	private static final ResourceBundle LBundle = ResourceBundle.getBundle("resources");
 
 	private static volatile ResourceBundle bundle;
 	private static final Object MUTEX = new Object();

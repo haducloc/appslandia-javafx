@@ -41,7 +41,8 @@ import javafx.stage.Window;
  */
 public class PrinterUtils {
 
-	public static void printPage(Node pageNode, String jobName, Window owner, Consumer<JobSettings> settingsInit, BiFunction<Printer, PageOrientation, PageLayout> layoutInit) {
+	public static void printPage(Node pageNode, String jobName, Window owner, Consumer<JobSettings> settingsInit,
+			BiFunction<Printer, PageOrientation, PageLayout> layoutInit) {
 		Printer printer = Printer.getDefaultPrinter();
 		if (printer == null) {
 			return;

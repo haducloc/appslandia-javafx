@@ -16,14 +16,19 @@
 		<module.name>com.appslandia.javafx</module.name>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<version.maven-compiler-plugin>3.8.0</version.maven-compiler-plugin>
-		<version.maven-jar-plugin>3.1.0</version.maven-jar-plugin>
-		<version.maven-source-plugin>3.0.1</version.maven-source-plugin>
-		<version.maven-javadoc-plugin>3.0.1</version.maven-javadoc-plugin>
-		<version.maven-gpg-plugin>1.6</version.maven-gpg-plugin>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+
+		<version.maven-compiler-plugin>3.8.1</version.maven-compiler-plugin>
+		<version.maven-jar-plugin>3.2.0</version.maven-jar-plugin>
+		<version.maven-source-plugin>3.2.1</version.maven-source-plugin>
+		<version.maven-javadoc-plugin>3.3.1</version.maven-javadoc-plugin>
+		<version.maven-gpg-plugin>3.0.1</version.maven-gpg-plugin>
 		<version.nexus-staging-maven-plugin>1.6.8</version.nexus-staging-maven-plugin>
 
-		<version.appslandia-common>7.9</version.appslandia-common>
+		<version.javafx>17.0.1</version.javafx>
+		<version.appslandia-common>8.6</version.appslandia-common>
+
 		<version.junit>4.13.1</version.junit>
 	</properties>
 
@@ -83,8 +88,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${version.maven-compiler-plugin}</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<release>11</release>
 				</configuration>
 			</plugin>
 
@@ -174,6 +178,27 @@
 	</profiles>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+			<version>${version.javafx}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-fxml</artifactId>
+			<version>${version.javafx}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-swing</artifactId>
+			<version>${version.javafx}</version>
+			<scope>provided</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>com.appslandia</groupId>
 			<artifactId>appslandia-common</artifactId>
