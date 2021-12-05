@@ -5,7 +5,7 @@
 
 	<groupId>com.appslandia</groupId>
 	<artifactId>appslandia-javafx</artifactId>
-	<version>3.7</version>
+	<version>3.8</version>
 
 	<name>appslandia-javafx</name>
 	<packaging>jar</packaging>
